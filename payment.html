@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>payment-mode</title>
+    <link rel="stylesheet" href="./css/components/payment.css">
+    <link rel="logo" href="http://fresherjobsuganda.com/wp-content/uploads/2017/04/prudential.png">
+    
+     
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+
+    <!--Customized css-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="./index.html"><img height="50px" src="./images/plogo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./help.html">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-danger" href=""><button>signed in</button></a>
+                             
+                        </li>
+    
+                        </ul>
+                      </div>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                   
+                  </nav>
+        <!--<div class="image d-flex">
+        <img width="300px;"height="200px;" src="http://fresherjobsuganda.com/wp-content/uploads/2017/04/prudential.png"><br>
+        <h1>Payment-Modes</h1>
+        </div>-->
+    
+       <div class="container parent">
+            <h1>Payment-Modes</h1>
+       <div class="row mode"> 
+           
+           <fieldset>
+            <legend  style="padding: 20px; font-size:30px;" >Premiums</legend>
+            <button type="button" class="btn btn-info"><a href="https://internet.dfcugroup.com/"  target="_blank">DFCU Bank</a></button>
+            <button type="button" class="btn btn-primary"><a href="https://centeonlinebanking.centenarybank.co.ug/iProfits2Prod/Login.aspx?ReturnUrl=%2fiProfits2PROD%2f"  target="_blank">Centenary Bank</a></button>
+            <button type="button" class="btn btn-danger"><a href="https://ug.equitybankgroup.com/onlinebanking/"  target="_blank">Equity Bank</a></button>
+            <button type="button" class="btn btn-primary"><a href="https://www.ug.barclays.com/bir/feature/loginprocess?execution=e1s1&_t=1567254877858"  target="_blank">Barclays Bank</a></button>
+        
+      </fieldset>
+    
+   </div>
+
+  <div class="row mode">
+    <fieldset>
+        <legend style="padding: 20px; font-size:30px;" >Mobile-Money</legend>
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#ModalCenter" >MTN Uganda</button>
+        
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter">Airtel Uganda</button>
+    
+        
+      </fieldset>
+  </div>
+
+  <div class="row mode visa" id="Visa-card">
+   
+   <form name="">
+    
+       <fieldset>
+         <legend style="padding: 20px; font-size:30px;" >Visa-card</legend>
+        <input placeholder="card-number"></input>
+        <input placeholder="card-code"></input>
+        <h4>Expiry-date</h4>
+        <input placeholder="month"></input>
+        <input placeholder="year"></input>
+        </fieldset>
+    </form>
+
+    </div>
+</div>
+
+</body>
+</html>

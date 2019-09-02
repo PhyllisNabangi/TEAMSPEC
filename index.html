@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prudential</title>
+   
+    <!--Customized css-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+
+</head>
+<body>
+  <div>
+    <!--Nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html"><img height="50px" src="./images/plogo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link act" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link act" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./help.html">Help</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Choose Language
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Luganda</a>
+              </div>
+            </li>
+            <div>
+            <li class="nav-item">
+                <button type="button" class="btn btn-danger nav-link" data-toggle="modal" data-target="#exampleModalCenter">Sign in</button>
+                <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Sign in here</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="md-form mb-5">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <input type="email" id="defaultForm-email" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+                              
+                                <i class="fas fa-lock prefix grey-text"></i>
+                                <input type="password" id="defaultForm-pass" class="form-control validate">
+                                <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-danger text-white"><a href="./login.html">Sign in</a></button>
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </li>
+            </ul>
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+   
+    <!--Content Section-->
+    <div class="container parent">
+    <div class="row">
+    <div class="col-md-4 left">
+      <img src="./images/logo.jpg" />
+        <h1 class="pd">Prudential<br> Uganda</h1>
+      
+    </div>
+    
+    <div class="col-md-8 right">
+    <!--<img class="image" src="./images/homepic.jpg"/>-->
+    <br>
+    <div class="container mt-3">
+
+      
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+        
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/homepic.jpg" alt="Los Angeles" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/home2.png" alt="Chicago" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/homepic.jpg" alt="New York" width="1100" height="500">
+          </div>
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <p>Prudential has been providing long-term protection and investment opportunities for over 170 years, from serving working families in Victorian Britain to supporting our 26 million+ life customers worldwide and £664 billion in assets under management as at 30 June 2018.
+      We were founded in 1848 on the principles of integrity and security, symbolised then as now by the face of Prudence</p>
+    </div>
+  
+    </div>  
+    </div>
+    
+    <!--Footer-->
+    <div class="text footer">
+      <hr/>
+      <p>Prudential Uganda is part of Prudential plc. Prudential plc Laurence Pountney Hill, London EC4R 0HH. Incorporated and registered in England and Wales. Registered Office as above. Registered number 1397169.Prudential plc is a holding company, subsidiaries of which are authorised and regulated, as applicable, by the Prudential Regulation Authority and the Financial Conduct Authority.</p>
+      <p>Prudential plc is a company incorporated and with its principal place of business in England, and its affiliated companies constitute one of the world’s leading financial services groups. It provides insurance and financial services directly and through its subsidiaries and affiliates throughout the world. It has been in existence for over 168 years and has £599 billion in assets under management (as at 31 December 2016). Prudential plc is not affiliated in any manner with Prudential Financial, Inc, a company whose principal place of business is in the United States of America.</p>
+    </div>
+  </div>
+
+<!--Javascript--> 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

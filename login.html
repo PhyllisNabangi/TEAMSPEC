@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Customized css-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="./css/components/chal.css">
+    <link href="./css/simple-sidebar.css" rel="stylesheet">
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/components/chal.css">
+
+    <title>Login Page</title>
+</head>
+<body>
+    
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="border-right bgc" id="sidebar-wrapper">
+      <div class="sidebar-heading">Welcome</div>
+      <div class="list-group list-group-flush bgc">
+        <a href="#profile" class="list-group-item list-group-item-action bgc">My Profile</a>
+        <a href="#product" class="list-group-item list-group-item-action bgc">Products</a>
+        <a href="#statement" class="list-group-item list-group-item-action bgc">Statements</a>
+        <a href="#notification" class="list-group-item list-group-item-action bgc notification">
+          <span>Notifications</span>
+          <span class="badge">3</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bgc">Help</a>
+        
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-danger" id="menu-toggle">Signed in</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Welcome to your Profile</h1>
+        <p>Take a look.</p>
+        
+        <div id="profile"></div>
+        <div id="product">
+            <h3>Our Products</h3>
+          <div class="row">
+          <div class=" col pdt1"><a class= "red" href="./payment.html">PruDollar</a></div>
+          <div class="col pdt1"><a class= "red" href="./payment.html">CashBuilder</a></div>
+          </div>
+          <div class="row">
+          <div class="col pdt2"><a class= "red" href="./payment.html">GroupPlans</a></div>
+          <div class="col pdt2"><a class= "red" href="./payment.html">LifePlus</a></div>
+        </div>
+          <div class="row">
+          <div class="col pdt2"><a class= "red" href="./payment.html">Edusave</a></div>
+          <div class="col pdt2"><a class= "red" href="./payment.html">PruMed</a></div>
+        </div>
+        </div>
+        <div id="statement">
+          <button class="btn btn-danger"><i class="fa fa-download"></i> <a href="./statement.html">Download Your statement here</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+</body>
+</html>
